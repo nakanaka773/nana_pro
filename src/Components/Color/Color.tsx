@@ -24,17 +24,17 @@ export default function Color() {
 
   return (
 
-    <div className='mt-12 flex align-center justify-center flex-col items-center'>
+    <div className=' flex align-center justify-center flex-col items-center' style={{marginTop:"2vw"}}>
       <Slider color="R" max={255} slidervalue={slidervaluered} onSliderValueChange={handleSliderValueChangeRed} />
       <p></p>
       <Slider color="G" max={255} slidervalue={slidervaluegreen} onSliderValueChange={handleSliderValueChangeGreen} />
       <p></p>
       <Slider color="B" max={255} slidervalue={slidervalueblue} onSliderValueChange={handleSliderValueChangeBlue} />
-      <div className='w-48 h-48' style={{ backgroundColor: `rgb(${slidervaluered}, ${slidervaluegreen}, ${slidervalueblue})` }}>
+      <div className='w-48 h-48' style={{ backgroundColor: `rgb(${slidervaluered}, ${slidervaluegreen}, ${slidervalueblue})`,width: "40vw", marginTop:"2vw" }}>
       </div>
       <div className='flex mt-12'>
       <p className='mr-12'>カラーコード</p>
-      <p className='text-2xl align-center '>{rgbHex(slidervaluered, slidervaluegreen, slidervalueblue)}</p>
+      <p className='text-2xl align-center'>{rgbHex(slidervaluered, slidervaluegreen, slidervalueblue)}</p>
 
       </div>
       
