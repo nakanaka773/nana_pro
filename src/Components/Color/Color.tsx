@@ -30,7 +30,7 @@ export default function Color() {
       <Slider color="G" max={255} slidervalue={slidervaluegreen} onSliderValueChange={handleSliderValueChangeGreen} />
       <p></p>
       <Slider color="B" max={255} slidervalue={slidervalueblue} onSliderValueChange={handleSliderValueChangeBlue} />
-      <div className=' mt-8 w-1/2 h-96' style={{ backgroundColor: `rgb(${slidervaluered}, ${slidervaluegreen}, ${slidervalueblue})` }}>
+      <div className='w-48 h-48' style={{ backgroundColor: `rgb(${slidervaluered}, ${slidervaluegreen}, ${slidervalueblue})` }}>
       </div>
       <div className='flex mt-12'>
       <p className='mr-12'>カラーコード</p>
